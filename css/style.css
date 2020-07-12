@@ -219,8 +219,8 @@ blockquote:nth-child(odd) {
     background: none;
 }
 
-#gallery-item {
-    width: 100%;
+.gallery-menu ul li {
+   cursor: pointer;
 }
 .gallery-item .item {
     width: 303px;
