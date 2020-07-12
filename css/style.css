@@ -80,9 +80,9 @@ a:focus {
     animation: down 1000ms ease-out infinite;
 }
 
-@keyframes down{
+@keyframes down {
     75% {
-        margin-top: 20px;
+        transform: translateY(20px);
     }
 }
 
