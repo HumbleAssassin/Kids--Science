@@ -153,6 +153,7 @@ article .container {
 
 article {
     letter-spacing: 1px;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(/assets/images/12b9cf3c7e1ab1fab87f608bb10b513b.jpg) no-repeat center;
 }
 
 h4 {
@@ -214,6 +215,14 @@ blockquote:nth-child(odd) {
     height: 15vh !important;
 }
 
+#contact-form  {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/icon-ios7-contact-512.webp") no-repeat center;
+}
+
+#contact-form form {
+    opacity: 0.8;
+}
+
 .footer {
     font-family: sans-serif;
     border-top: 2px solid black;
@@ -231,4 +240,56 @@ blockquote:nth-child(odd) {
 .gallery-item .item {
     width: 303px;
    margin: 10px;
+   position: relative;
+}
+
+.gallery-item .item .fa-eye {
+    position: absolute;
+    color: white;
+    z-index: 99999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0;
+    transition: font-size 150ms linear;
+    transition-delay: 150ms;
+}
+
+.gallery-item .item:after {
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 200ms linear;
+}
+
+.gallery-item .item:hover .fa-eye {
+    font-size: 40px;
+}
+
+.gallery-item .item:hover:after {
+    height: 100%;
+    width: 100%;
+}
+
+.gallery-item .item:hover:after {
+    position: absolute;
+}
+
+#gallery .gallery-item .item img{
+    width: 100%;
+}
+
+@media screen and (max-width: 450px) {
+    article .container {
+        padding: 5px !important;
+    }
+
+    article .container p {
+        padding: 0 !important;
+    }
 }
