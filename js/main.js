@@ -26,9 +26,9 @@ $(document).ready(function() {
     $(window).scroll(function() {
         var top = $(window).scrollTop();
         if (top > 50) {
-            $('#nav').addClass("bg-success");
+            $('#nav').addClass("shadow");
         } else {
-            $('#nav').removeClass("bg-success");
+            $('#nav').removeClass("shadow");
         }
     });
 
@@ -65,5 +65,24 @@ $(document).ready(function() {
         });
     }, false);
             })();
+
+
+            $('body').scrollspy({
+                target: '#navbarNav',
+                offset: 150
+              }); 
+
+    $('a[href=#]').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top - 50
+            }, 1000);
+            return false;
+          }
+        }
+    });
 
         
