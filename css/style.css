@@ -180,7 +180,7 @@ h4:after {
     left: 10px;
     height: 110px;
     width: 110px;
-    background: url(/assets/images/splatter.gif);
+    background: url('../assets/images/splatter.gif');
     position: absolute;
     background-size: cover;
     z-index: 8;
@@ -236,6 +236,12 @@ blockquote:nth-child(odd) {
 
 .gallery-menu ul li {
    cursor: pointer;
+}
+
+.gallery-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .gallery-item .item {
     width: 303px;
@@ -293,12 +299,9 @@ blockquote:nth-child(odd) {
     transform: scale(1.15) rotate(5deg);
 }
 
-/* @media screen and (max-width: 450px) {
-    article .container {
-        width: 10vw;
-    }
-
+@media screen and (max-width: 450px) {
+   
     article .container p {
         padding: 0 !important;
     }
-} */
+}

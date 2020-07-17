@@ -34,7 +34,7 @@ $(document).ready(function() {
 
     $(".gallery-item").isotope({
         itemSelector: ".item",
-        layoutMode: "fitRows"
+        // layoutMode: "fitRows"
     });
     $('.gallery-menu ul li').click(function() {
         $('.gallery-menu ul li').removeClass('active');
@@ -66,6 +66,7 @@ $(document).ready(function() {
     }, false);
             })();
 
+// ***Scroll Spy init and auto scroll neutralizer
 
             $('body').scrollspy({
                 target: '#navbarNav',
@@ -83,8 +84,6 @@ $(document).ready(function() {
             return false;
           }
         };
-
-        new WOW().init();
     });
 
         
