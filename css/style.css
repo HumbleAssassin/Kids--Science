@@ -238,11 +238,6 @@ blockquote:nth-child(odd) {
    cursor: pointer;
 }
 
-.gallery-item {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 .gallery-item .item {
     width: 303px;
     height: 202px;
@@ -288,19 +283,19 @@ blockquote:nth-child(odd) {
     position: absolute;
 }
 
-#gallery .gallery-item .item img{
-    width: 100%;
-    height: 100%;
+.gallery-item .item img{
+    width: 303px;
+    height: 202px;
     object-fit: cover;
     transition: all 400ms linear;
 }
 
-#gallery .gallery-item .item:hover img {
-    transform: scale(1.15) rotate(5deg);
+.gallery-item .item:hover img {
+    transform: scale(1.125) rotate(5deg);
 }
 
 .bg-darker {
-    background: rgba(0, 0, 0, 0.9)
+    background: rgba(0, 0, 0, 0.85);
 }
 
 @media screen and (max-width: 450px) {
