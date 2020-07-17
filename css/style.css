@@ -239,8 +239,10 @@ blockquote:nth-child(odd) {
 }
 .gallery-item .item {
     width: 303px;
-   margin: 10px;
-   position: relative;
+    height: 202px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
 }
 
 .gallery-item .item .fa-eye {
@@ -282,14 +284,21 @@ blockquote:nth-child(odd) {
 
 #gallery .gallery-item .item img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 400ms linear;
 }
 
-@media screen and (max-width: 450px) {
+#gallery .gallery-item .item:hover img {
+    transform: scale(1.15) rotate(5deg);
+}
+
+/* @media screen and (max-width: 450px) {
     article .container {
-        padding: 5px !important;
+        width: 10vw;
     }
 
     article .container p {
         padding: 0 !important;
     }
-}
+} */
