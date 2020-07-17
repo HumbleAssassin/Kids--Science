@@ -183,7 +183,7 @@ h4:after {
     background: url('../assets/images/splatter.gif');
     position: absolute;
     background-size: cover;
-    z-index: 8;
+    z-index: -2;
     mix-blend-mode: multiply;
 }
 
@@ -205,7 +205,7 @@ blockquote:nth-child(odd) {
     color: white;
 }
 
-.contact h4:after, .footer h4:after {
+.contact h4:after, .footer h4:after{
     mix-blend-mode: screen;
 }
 
