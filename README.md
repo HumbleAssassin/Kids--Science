@@ -1,2 +1,2 @@
-# Kids' Science
-# Link to page: https://humbleassassin.github.io/KidsScience/
+
+Link to page: <a href="https://humbleassassin.github.io/KidsScience/" target="blank">Kids' Science</a>
