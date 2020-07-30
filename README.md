@@ -1,2 +1,2 @@
 
-Link to page: <a href="https://humbleassassin.github.io/KidsScience/" target="blank">Kids' Science</a>
+Link to page: <a href="https://humbleassassin.github.io/KidsScience/" target="_blank">Kids' Science</a>
