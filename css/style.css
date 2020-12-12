@@ -7,6 +7,7 @@ html {
 body {
     height: 100%;
     font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
 }
 
 .shadow {
@@ -152,7 +153,7 @@ article .container {
 
 
 article {
-    letter-spacing: 1px;
+    line-height: 28px;
     background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../assets/images/12b9cf3c7e1ab1fab87f608bb10b513b.jpg') no-repeat center;
 }
 
